@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="3-1style.css">
+</head>
+<body>
+<h1>TODOリスト</h1>
+
+<p class="radio">
+    <input type="radio" id="r1" name="list" value="1" checked><label for="r1">全て</label>
+    <input type="radio" id="r2" name="list" value="2"><label for="r2">作業中</label>
+    <input type="radio" id="r3" name="list" value="3"><label for="r3">完了</label>
+  </p>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>コメント</th>
+      <th>状態</th>
+    </tr>
+    </thead>
+    <tbody id="list"></tbody>
+  </table>
+  <h2>新規タスクの追加</h2>
+  <input type="text" id="newtask">
+  <button type="submit" id="add">追加</button>
+
+  
+  <script src="3-1main.js"></script>
+</body>
+</html>
